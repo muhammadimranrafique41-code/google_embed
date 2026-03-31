@@ -1,0 +1,11 @@
+product_id,product_name,category,color,size,price,rating,description,image_filename,product_link
+P001,Classic Navy Blue Polo T-Shirt,Polo T-Shirts,Navy,M,1499,4.5,Classic polo shirt with premium cotton fabric and comfortable fit,polo_navy.jpg,https://example.com/products/P001
+P002,Slim Fit Black Formal Shirt,Formal Shirts,Black,L,1999,4.3,Elegant slim-fit formal shirt with wrinkle-free technology,formal_black.jpg,https://example.com/products/P002
+P003,Washed Indigo Denim Jacket,Jackets,Indigo,L,3499,4.7,Classic denim jacket with vintage wash and distressed details,denim_jacket_indigo.jpg,https://example.com/products/P003
+P004,White Crew Neck T-Shirt,T-Shirts,White,M,799,4.2,Basic white crew neck t-shirt made of 100% cotton,tshirt_white.jpg,https://example.com/products/P004
+P005,Olive Green Cargo Shorts,Shorts,Olive Green,M,1299,4.1,Functional cargo shorts with multiple pockets and comfortable fit,shorts_olive.jpg,https://example.com/products/P005
+P006,Sky Blue Casual Shirt,Casual Shirts,Sky Blue,L,1599,4.4,Lightweight casual shirt with breathable fabric and relaxed fit,casual_skyblue.jpg,https://example.com/products/P006
+P007,Charcoal Slim Fit Chinos,Chinos,Charcoal,M,1899,4.6,Premium chinos with slim fit and wrinkle-resistant fabric,chinos_charcoal.jpg,https://example.com/products/P007
+P008,Maroon Cotton Kurta,Kurtas,Maroon,L,2499,4.5,Traditional kurta made of soft cotton with intricate embroidery,kurta_maroon.jpg,https://example.com/products/P008
+P009,Dark Wash Slim Fit Jeans,Jeans,Dark Blue,L,2199,4.3,Modern slim-fit jeans with dark wash and comfortable stretch,jeans_darkblue.jpg,https://example.com/products/P009
+P010,Beige Formal Trousers,Formal Trousers,Beige,M,1799,4.4,Straight-fit formal trousers with premium wool blend,trousers_beige.jpg,https://example.com/products/P010

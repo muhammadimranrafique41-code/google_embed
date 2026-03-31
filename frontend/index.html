@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StyleMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="StyleMate overview">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">SM</div>
+        <div>
+          <p class="eyebrow">Multimodal Shopping</p>
+          <h1>StyleMate</h1>
+        </div>
+      </div>
+
+      <p class="sidebar-copy">
+        Describe a look, share a budget, or upload an outfit image to find matching products from the catalog.
+      </p>
+
+      <div class="sidebar-panel">
+        <h2>Try prompts</h2>
+        <button class="prompt-chip" type="button" data-prompt="Show me relaxed casual shirts under Rs 1600">Relaxed shirts under Rs 1600</button>
+        <button class="prompt-chip" type="button" data-prompt="I need something formal in black for office wear">Formal black office wear</button>
+        <button class="prompt-chip" type="button" data-prompt="Suggest a smart casual outfit for dinner">Smart casual dinner outfit</button>
+      </div>
+
+      <div class="sidebar-panel muted">
+        <h2>Supports</h2>
+        <p>Text search</p>
+        <p>Image search</p>
+        <p>Price-aware filtering</p>
+      </div>
+    </aside>
+
+    <main class="chat-layout">
+      <header class="chat-header">
+        <div>
+          <p class="eyebrow">Assistant</p>
+          <h2>Fashion search that understands text and images</h2>
+        </div>
+        <button id="clear-btn" class="ghost-button" type="button">Clear chat</button>
+      </header>
+
+      <section id="chat-messages" class="chat-messages" aria-live="polite"></section>
+
+      <div id="typing-indicator" class="typing-indicator hidden" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <section class="composer-panel">
+        <div id="image-preview-container" class="image-preview-container hidden" aria-hidden="true">
+          <img id="preview-image" class="preview-image" src="" alt="Uploaded preview">
+          <div class="preview-copy">
+            <p>Image attached</p>
+            <button id="remove-image" class="text-button" type="button">Remove</button>
+          </div>
+        </div>
+
+        <form id="chat-form" class="chat-form" autocomplete="off">
+          <label class="input-stack" for="message-input">
+            <span class="sr-only">Message</span>
+            <textarea id="message-input" name="message" rows="1" placeholder="Ask for polo shirts, budget looks, or upload an outfit photo..."></textarea>
+          </label>
+
+          <div class="composer-actions">
+            <label for="image-upload" class="ghost-button upload-button">
+              <input type="file" id="image-upload" accept="image/*" hidden>
+              Upload image
+            </label>
+            <button id="send-btn" class="primary-button" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <template id="message-template">
+    <article class="message">
+      <div class="message-bubble">
+        <p class="message-text"></p>
+      </div>
+    </article>
+  </template>
+
+  <template id="product-card-template">
+    <article class="product-card">
+      <img class="product-image" alt="">
+      <div class="product-body">
+        <p class="product-category"></p>
+        <h3 class="product-name"></h3>
+        <p class="product-description"></p>
+        <div class="product-meta">
+          <span class="product-price"></span>
+          <span class="product-rating"></span>
+        </div>
+        <a class="product-link" target="_blank" rel="noreferrer">View product</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
